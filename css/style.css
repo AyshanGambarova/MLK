@@ -429,10 +429,8 @@ header.bottom {
     background: #171a21
 }
 
-#mainmenu li li a:hover,
-#mainmenu ul li:hover>a {
-    color: #fff;
-    background: #1a8b49
+#mainmenu li a:hover{
+    color: #0ec3f7!important;
 }
 
 #mainmenu li ul {
@@ -621,24 +619,36 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #service {
     background-image: linear-gradient(rgb(0 0 0 / 44%), rgb(0 0 0 / 78%)), url(../images/background/services.png);
     background-repeat: no-repeat;
 }
+
 #career {
-    background-image: linear-gradient(rgb(0 0 0 / 44%), rgb(0 0 0 / 78%)), url(../images/background/career.png);
+    background-image: linear-gradient(rgb(0 0 0 / 53%), rgb(0 0 0 / 78%)), url(../images/background/career.png);
     background-repeat: no-repeat;
 }
+#contact {
+    background-image: linear-gradient(rgb(0 0 0 / 53%), rgb(0 0 0 / 78%)), url(../images/background/about.png);
+    background-repeat: no-repeat;
+}
+
 #main .logo {
     width: 170px;
 }
 
-#about .logo, #service .logo,#career .logo  {
-    width: 120px;
+#about .logo,
+#service .logo,
+#career .logo,
+#contact .logo {
+    width: 150px;
 }
-#about .about-img .image img{
+
+#about .about-img .image img {
     height: 270px;
 }
+
 #about .about-text {
     color: white;
     font-size: 15px;
@@ -659,26 +669,87 @@ section {
     padding: 7px 20px;
     font-size: 14px;
 }
-#service .service-card .top img{
-    width:  100%;
+
+#service .service-card .top img {
+    width: 100%;
     height: 230px;
     object-fit: cover;
 }
-#sercice .service-card .top{
+
+#sercice .service-card .top {
     overflow: hidden;
 }
-#sercice .service-card .top img:hover{
+
+#sercice .service-card .top img:hover {
     transform: scale(1.08);
     transition-duration: 0.4s;
     -webkit-transform: scale(1.08);
 }
-#service .service-card .bottom{
+
+#service .service-card .bottom {
     margin-top: 15px;
 }
-#service .service-card .bottom p{
-font-size: 15px;
+#service .service-card .bottom h4 {
+    font-size: 16px;
+}
+#service .service-card .bottom p {
+    font-size: 14px;
 }
 
+#career .career-text {
+    padding: 5px 39px;
+}
+
+#career .career-img {
+    width: 435px;
+    padding-left: 57px;
+}
+
+input[type=file] {
+    width: 100%;
+    background-color: rgb(222 218 218 / 50%);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    color: transparent;
+    padding: 29px 0px;
+}
+
+.file-upload {
+    position: relative;
+}
+
+input[type="file"]::file-selector-button {
+    display: none;
+}
+
+.file-upload img {
+    position: absolute;
+    width: 30px;
+    top: 50px;
+    left: 49%;
+}
+
+.file-upload span.upload {
+    position: absolute;
+    font-size: 13px;
+    top: 72px;
+    color: white;
+    left: 48%;
+}
+
+.send-btn {
+    border: none;
+    background-color: #34C2DA;
+    color: white;
+    font-size: 13px;
+    padding: 5px 30px;
+    border-radius: 3px;
+}
+#contact ul li{
+    list-style-type: none;
+    padding-left: 0px;
+}
 .section-fixed {
     position: fixed;
     width: 100%;
@@ -10596,6 +10667,11 @@ img {
         top: -82px;
         right: 60px;
         width: 140px
+    }
+
+    #career .career-img {
+        width: 100%;
+        padding-left: 0px;
     }
 
     .mb-sm-30 {
