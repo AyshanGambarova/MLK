@@ -360,6 +360,12 @@ section {
     transform: scale(1);
 }
 
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
 #main {
     background-image: linear-gradient(rgb(0 0 0 / 31%), rgb(0 0 0 / 34%)), url(../images/background/main.png);
     background-position: center !important;
@@ -513,13 +519,6 @@ input[type="file"]::file-selector-button {
 
 .full-height {
     overflow: hidden
-}
-
-#particles-js {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
 }
 
 header.header-sm {
